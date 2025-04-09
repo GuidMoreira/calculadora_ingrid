@@ -1,0 +1,35 @@
+function somar(n1, n2){
+  alert("A soma é " + (n1 + n2) );
+}
+
+function subtracao(n1, n2){
+  alert("A subtração é "+(n1 - n2) )
+}
+
+function multiplicacao(n1, n2){
+  alert("A multiplicação é "+(n1 * n2) )
+}
+
+function divisao(n1, n2){
+  alert("A divisão é "+(n1 / n2) )
+}
+
+n1 = Number(prompt("Digite o primeiro numero do calculo"));
+n2 = Number(prompt("Digite o segundo numero do calculo"));
+operacao = (prompt("Digite a operação que você quer fazer"));
+
+switch (operacao) {
+  case "+":
+    somar(n1, n2);
+  break
+  case "-":
+    subtracao(n1, n2);
+  break
+  case "*":
+    multiplicacao(n1, n2);
+  break
+  case "/":
+    divisao(n1, n2);    
+  break
+  default : alert ("Você não digitou uma operação válida");
+}
